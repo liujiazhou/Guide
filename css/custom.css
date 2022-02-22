@@ -1,11 +1,13 @@
-/* 全局字体 */
-* {
-  font-family: "PingFang SC", sans-serif;
-  font-weight: normal;
-  letter-spacing: 1px;
+/* 网站字体-鸿蒙字体 */
+@font-face {
+  font-family:HarmonyOS_Sans_SC_Medium;font-style: normal;font-display: swap;
+  src: url('https://cdn.jsdelivr.net/gh/irozhi/HarmonyOS-Sans/HarmonyOS_Sans_SC/HarmonyOS_Sans_SC_Medium.woff2') format('woff2'),
+       url('https://cdn.jsdelivr.net/gh/irozhi/HarmonyOS-Sans/HarmonyOS_Sans_SC/HarmonyOS_Sans_SC_Medium.woff') format('woff');
 }
+*{font-family:HarmonyOS_Sans_SC_Medium;}
 
-/* 导航栏 */
+
+/* 顶部导航栏 透明 */
 nav.navbar.user-info-navbar {
   background: rgba(255, 255, 255) !important;
   height: 66px;
@@ -184,7 +186,7 @@ body.night .box2:hover {
 }
 /* 分类标题 */
 h4.text-gray {
-  font-family: "Candy", sans-serif;
+  font-family: "HarmonyOS_Sans_SC_Medium", sans-serif;
   font-size: 24px;
   color: #fff;
   text-shadow: -1px 0 #666, 0 1px #666, 1px 0 #666, 0 -1px #666;
@@ -199,7 +201,7 @@ h4.text-gray {
   color: #fff;
 }
 strong {
-  font-family: "Candy", sans-serif;
+  font-family: "HarmonyOS_Sans_SC_Medium", sans-serif;
   font-size: 18px;
   font-weight: normal;
 }
@@ -267,6 +269,7 @@ body.page-body.boxed-container.vsc-initialized {
   border: none;
   transition: 0.3s;
   border-radius: 12px;
+  padding: 17px 5px;
 }
 .sidebar-menu .main-menu a:hover {
   background: #888;
@@ -281,9 +284,9 @@ span#busuanzi_container_site_pv,
 span#busuanzi_value_site_pv,
 span#busuanzi_container_site_uv,
 span#busuanzi_value_site_uv {
-  font-family: "Candy", sans-serif !important;
+  /* font-family: "Candy", sans-serif !important; */
   color: #ddd;
-  font-size: 17px;
+  font-size: 18px;
 }
 .sidebar-menu .main-menu li.has-sub > a:before,
 .sidebar-menu i {
@@ -308,11 +311,7 @@ footer.main-footer.sticky.footer-type-1 {
   vertical-align: center;
 }
 
-@font-face {
-  font-family: "Candy"; /* 字体名自定义即可 */
-  src: url("https://cdn.jsdelivr.net/gh/hassanblog/navigation/fonts/Candy.ttf"); /* 字体文件路径 */
-  font-display: swap;
-}
+
 
 /* icon图标 */
 i::before {
@@ -355,30 +354,6 @@ body.night .user-info-navbar .user-info-menu > li > a:hover {
   border: none !important;
 }
 
-/* 鼠标图标 -----------------------------------------------------------------------开始 */
-body {
-  cursor: url(https://unpkg.zhimg.com/hassan-assets/img/cursor.png),
-    default !important;
-}
-
-/*i标签，a标签，按钮，头部的导航栏，网址卡片，底栏链接*/
-i:hover,
-a:hover,
-button:hover,
-#nav .site-page:hover,
-.xe-widget.xe-conversations.box2.label-info {
-  cursor: url(https://unpkg.zhimg.com/hassan-assets/img/cursor_puppy.png),
-    pointer !important;
-}
-
-/*页脚a标签，分页器，搜索框*/
-#footer-wrap a:hover,
-#pagination .page-number:hover,
-input#txt {
-  cursor: url(https://unpkg.zhimg.com/hassan-assets/img/cursor_stitch.png),
-    pointer !important;
-}
-/* 鼠标图标 -----------------------------------------------------------------------结束 */
 
 /* 滚动条 */
 ::-webkit-scrollbar {
@@ -408,4 +383,19 @@ input#txt {
 ::-moz-selection {
   color: #fff;
   background-color: #1f1f1f;
+}
+
+/* 鼠标样式 */
+body {
+  cursor: url(https://cdn.jsdelivr.net/gh/constown/HexoCustomFile/public/cursors/default.cur),
+    default;
+}
+a,
+img {
+  cursor: url(https://cdn.jsdelivr.net/gh/constown/HexoCustomFile/public/cursors/pointer.cur),
+    default;
+}
+
+.boxed-container .page-container .main-content {
+  background-color: #9f232399;
 }
