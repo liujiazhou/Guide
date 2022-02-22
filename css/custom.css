@@ -269,7 +269,7 @@ body.page-body.boxed-container.vsc-initialized {
   border: none;
   transition: 0.3s;
   border-radius: 12px;
-  padding: 17px 5px;
+  padding: 10px 5px;
 }
 .sidebar-menu .main-menu a:hover {
   background: #888;
@@ -286,7 +286,8 @@ span#busuanzi_container_site_uv,
 span#busuanzi_value_site_uv {
   /* font-family: "Candy", sans-serif !important; */
   color: #ddd;
-  font-size: 18px;
+  /* 字体大小 */
+  font-size: 17px;
 }
 .sidebar-menu .main-menu li.has-sub > a:before,
 .sidebar-menu i {
